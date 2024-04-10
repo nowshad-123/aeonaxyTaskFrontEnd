@@ -1,0 +1,155 @@
+/* General Styles */
+.logo_container {
+    padding-left: 30px;
+    height: 3.5rem;
+    width: 100vw;
+}
+
+.createProfile_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 30px;
+}
+
+
+p {
+    margin: 0;
+    font-size: small;
+    color: rgb(97, 97, 97);
+}
+
+
+
+/* Avatar Styles */
+.avatarCE_container {
+    width: 35%;
+    margin: 15px;
+}
+
+.profile_container {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px dashed rgb(128, 124, 124);
+    color: rgb(128, 124, 124);
+    overflow: hidden;
+}
+
+.profile_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.chooseImage_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.uploadAvatar_container {
+    display: flex;
+}
+
+.chooseImage_customButton {
+    height: 25px;
+    width: 80px;
+    border: 1px solid rgb(115, 115, 115);
+    font-size: 8px;
+    font-weight: 700;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.chooseImage_customButton:hover {
+    background-color: rgb(181, 180, 180);
+}
+
+.defaultImages {
+    font-size: 10px;
+    color: rgb(128, 124, 124);
+    font-weight: 600;
+    position: relative;
+}
+
+/* Location Styles */
+.location_container {
+    width: 35%;
+    margin: 5px;
+}
+
+.location_inputTag {
+    background-color: white !important;
+    color: black !important;
+}
+
+.input_border_initial,
+.input_border {
+    border: 1px solid gray;
+    border-radius: 5px;
+    position: relative;
+    bottom: 20px;
+}
+
+.input_border {
+    border: 1px solid #ea4b8b;
+    animation: borderExpand 0.5s forwards;
+}
+
+@keyframes borderExpand {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+/* Next Button Styles */
+.nextButton_container {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .avatarCE_container {
+        width: 65%;
+
+    }
+
+    .location_container {
+        width: 65%;
+        margin: 5px;
+    }
+
+    .nextButton_container {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+}
