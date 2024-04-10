@@ -17,13 +17,14 @@ h2 {
   text-align: center;
 }
 
+h5 {
+  font-size: 13px;
+  font-weight: bold;
+}
+
 h6 {
   font-size: 13px;
   font-weight: bold;
   text-align: center;
 }
 
-h5 {
-  font-size: 13px;
-  font-weight: bold;
-}

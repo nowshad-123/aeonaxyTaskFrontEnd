@@ -20,7 +20,7 @@ export const Category = () => {
             const userData = localStorage.getItem("userData")
             const parse = JSON.parse(userData)
             const token = parse.token
-            const { data } = await axios.post("http://localhost:4000/verificationEmail", { token })
+            const { data } = await axios.post("https://aeonaxytaskbackend.onrender.com/verificationEmail", { token })
             if (!data.success) {
                 alert("Enter the valid Email")
                 navigate('/')

@@ -16,7 +16,7 @@ const SignIn = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post(`http://localhost:4000/register`, {
+            const { data } = await axios.post(`https://aeonaxytaskbackend.onrender.com/register`, {
                 name,
                 username,
                 email,

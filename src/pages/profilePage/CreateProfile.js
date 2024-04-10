@@ -45,7 +45,7 @@ const CreateProfile = () => {
     const handleNextButtonClick = async () => {
         // Send post request with selected image
         try {
-            const { data } = await axios.post('http://localhost:4000/uploadImage', { image: selectedImage })
+            const { data } = await axios.post('https://aeonaxytaskbackend.onrender.com/uploadImage', { image: selectedImage })
             if (data.success) {
 
 

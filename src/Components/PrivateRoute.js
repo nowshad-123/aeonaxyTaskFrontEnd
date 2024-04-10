@@ -17,7 +17,7 @@ export default function PrivateRoute() {
                     navigate('/'); // Redirect to signup if token is not present
                 } else {
 
-                    const response = await axios.get(`http://localhost:4000/userAuth/${parsedToken.token}`);
+                    const response = await axios.get(`https://aeonaxytaskbackend.onrender.com/userAuth/${parsedToken.token}`);
                     if (response.data.success) {
                         setAuthenticated(true);
                     } else {
